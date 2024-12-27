@@ -1,0 +1,37 @@
+@font-face {
+  font-family: HarmonyOS_Sans;
+  src: url('../assets/HarmonyOS_Sans_Light.ttf');
+}
+
+:root {
+  --alpha-color: 0, 0, 0;
+  --alpha-bg: 255, 255, 255;
+  --primary-color: #1890ff;
+  --search-height: 46px;
+  --search-radius: 23px;
+  --search-bgColor: rgba(var(--alpha-bg), 0.5);
+  --search-list-hover: rgba(255, 255, 255, .7);
+  --icon-radius: 12.8px;
+  --icon-size: 48px;
+  --icon-gap-x: 24px;
+  --icon-gap-y: 24px;
+  --icon-max-width: 1350px;
+  --icon-opacity: 1;
+  --icon-name: block;
+  --icon-nameSize: 12px;
+  --icon-nameColor: #fff;
+  --time-size: 70px;
+  --time-font: HarmonyOS_Sans;
+  --time-color: #fff;
+  --time-fontWeight: 400;
+  --time-month: inline;
+  --time-week: inline;
+  --time-lunar: inline;
+  --time-sec: none;
+  --sidebar-width: 50px;
+  --sidebar-opacity: 0.4;
+  --wall-mask: 0;
+  --wall-blur: 0px;
+  --img-bg: 38, 64, 85;
+  --icon-transition-duration: .3s;
+}
