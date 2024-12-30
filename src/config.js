@@ -1,3 +1,5 @@
+import maccms from '@/assets/maccms.ico';
+
 export const tabs = [
   {
     icon: 'main',
@@ -83,7 +85,7 @@ export const tabs = [
     }, {
       size: '1x1',
       name: 'MacCMS',
-      icon: 'src/assets/maccms.ico',
+      icon: maccms,
       bgColor: '#fff',
       link: 'http://vod.iwantc.cyou/'
     },]
@@ -95,7 +97,7 @@ export const tabs = [
       {
         size: '1x1',
         name: 'MacCMS',
-        icon: 'src/assets/maccms.ico',
+        icon: maccms,
         bgColor: '#fff',
         link: 'http://vod.iwantc.cyou/'
       }, {
