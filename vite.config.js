@@ -6,6 +6,10 @@ const srcPath = fileURLToPath(new URL("./src", import.meta.url))
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "./",
+  build: {
+
+  },
   plugins: [vue()],
   resolve: {
     alias: {
