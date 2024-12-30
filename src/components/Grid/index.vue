@@ -141,6 +141,12 @@
               overflow: hidden;
               white-space: nowrap;
             }
+
+
+            &:hover {
+              cursor: pointer;
+              box-shadow: 0 0 10px #0000004d;
+            }
           }
 
           .app-item-duration {

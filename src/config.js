@@ -16,10 +16,10 @@ export const tabs = [
       component: 'calendar'
     }, {
       size: '1x1',
-      name: '壁纸',
-      icon: 'https://files.codelife.cc/tools-icon/wallpaper.svg',
+      name: '豆包',
+      icon: 'https://files.codelife.cc/icons/doubao.com.webp?x-oss-process=image/resize,limit_0,m_fill,w_100,h_100/quality,q_92/format,webp',
       bgColor: '',
-      link: 'https://wallhaven.cc/'
+      link: 'https://tj.shshinfo.com/tz/pcw/db200.html'
     }, {
       size: '1x1',
       name: '淘宝',
@@ -55,7 +55,7 @@ export const tabs = [
       name: '抖音',
       icon: 'https://files.codelife.cc/website/douyin.svg',
       bgColor: '#1c0b1a',
-      link: 'https://www.douyin.com/'
+      link: 'https://tj.shshinfo.com/tz/pcw/douyin6008.html'
     }, {
       size: '1x1',
       name: '爱奇艺',
@@ -109,7 +109,7 @@ export const tabs = [
         name: '抖音',
         icon: 'https://files.codelife.cc/website/douyin.svg',
         bgColor: '#1c0b1a',
-        link: 'https://www.douyin.com/'
+        link: 'https://tj.shshinfo.com/tz/pcw/douyin6008.html'
       }, {
         size: '1x1',
         name: '爱奇艺',
@@ -146,6 +146,18 @@ export const tabs = [
         icon: 'https://files.codelife.cc/icons/tmall.svg',
         bgColor: '#ff0030',
         link: 'https://www.tmall.com/'
+      },
+    ]
+  }, {
+    icon: 'tool',
+    name: '工具',
+    app: [
+      {
+        size: '1x1',
+        name: '豆包',
+        icon: 'https://files.codelife.cc/icons/doubao.com.webp?x-oss-process=image/resize,limit_0,m_fill,w_100,h_100/quality,q_92/format,webp',
+        bgColor: '',
+        link: 'https://tj.shshinfo.com/tz/pcw/db200.html'
       },
     ]
   },

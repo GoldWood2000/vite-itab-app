@@ -29,10 +29,6 @@
     transition: transform .2s;
     cursor: pointer;
 
-    &:hover {
-      box-shadow: 0 0 10px #0000004d;
-    }
-
     .app-item-img {
       display: block;
       object-fit: contain;

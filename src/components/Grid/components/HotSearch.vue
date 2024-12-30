@@ -18,6 +18,7 @@
 </template>
 <script setup>
   import { reactive, onMounted } from 'vue';
+  import qs from 'query-string';
   import { get } from '@/plugin/http';
   const state = reactive({
     tag: [{ name: '百度', id: 'Jb0vmloB1G', cache: [] },{ name: '微博', id: 'KqndgxeLl9', cache: [] }, { name: '知乎', id: 'mproPpoq6O', cache: [] }],
@@ -33,9 +34,11 @@
     const { code, data } = await get(`top/list?lang=cn&size=20&id=${state.tag[state.active].id}`)
     if (code === 200) {
       if (cacheIIndex === 0) {
-        // data.forEach((item) => {
-        //   const link = item.link
-        // })
+        data.forEach((item) => {
+          const objUrl = qs.parseUrl(item.link)
+          Reflect.set(objUrl.query, 'tn', '54093922_41_hao_pg')
+          item.link = qs.stringifyUrl(objUrl)
+        })
       }
       state.tagData = data
       state.tag[cacheIIndex].cache = data
@@ -118,6 +121,12 @@
           min-width: 8px;
           font-weight: 700;
           margin-right: 5px;
+        }
+
+        a {
+          &:hover {
+            color: #a7abb6;
+          }
         }
       }
 

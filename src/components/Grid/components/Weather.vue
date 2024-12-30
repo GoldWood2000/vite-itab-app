@@ -48,7 +48,17 @@
     }
   }
 
-  onMounted(() => getData())
+  onMounted(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        getData()
+      }, (error) => {
+        getData()
+      });
+    } else {
+      getData()
+    }
+  })
 
 </script>
 <style scoped>
@@ -76,10 +86,6 @@
     transition: transform .2s;
     cursor: pointer;
 
-    &:hover {
-      box-shadow: 0 0 10px #0000004d;
-    }
-
     .weather-icon {
       width: 100%;
       height: 100%;
@@ -89,6 +95,10 @@
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 </style>
