@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import { createHtmlPlugin } from 'vite-plugin-html'
 import { fileURLToPath, URL } from "node:url";
 
 const srcPath = fileURLToPath(new URL("./src", import.meta.url))
@@ -7,10 +8,29 @@ const srcPath = fileURLToPath(new URL("./src", import.meta.url))
 // https://vite.dev/config/
 export default defineConfig({
   base: "./",
+  publicDir: false,
   build: {
-
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vue: ['vue']
+        }
+      },
+      plugins: []
+    },
+    reportCompressedSize: false,
+    chunkSizeWarningLimit: 2048
   },
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    createHtmlPlugin({
+      inject: {
+        data: {
+          _FAVICONPATH_: '/public/'
+        }
+      }
+    })
+  ],
   resolve: {
     alias: {
       "@": srcPath,
