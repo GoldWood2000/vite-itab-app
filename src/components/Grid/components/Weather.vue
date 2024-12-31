@@ -49,15 +49,15 @@
   }
 
   onMounted(() => {
-    new Promise((res) => {
-      if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition((position) => res(), (error) => res())
-      } else {
-        res()
-      }
-    }).finally(() => {
+    // new Promise((res) => {
+    //   if (navigator.geolocation) {
+    //   navigator.geolocation.getCurrentPosition((position) => res(), (error) => res())
+    //   } else {
+    //     res()
+    //   }
+    // }).finally(() => {
       getData()
-    })
+    // })
   })
 
 </script>
