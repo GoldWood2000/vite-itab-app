@@ -1,5 +1,5 @@
 <template>
-  <div class='weather'>
+  <div class='weather' @click='goWeather'>
     <div class='w-full h-full relative text-[19px]'>
       <div class='weather-icon p-[0.6em]'>
         <div class='flex-between w-full' v-if='state.weather.now'>
@@ -46,6 +46,10 @@
       state.location = data
       state.weather = wData
     }
+  }
+
+  const goWeather = () => {
+    window.open(`${window.url}?天气`)
   }
 
   onMounted(() => {

@@ -1,5 +1,5 @@
 <template>
-  <div class='relative w-full h-full text-[19px] rounded-[var(--icon-radius)]'>
+  <div class='relative w-full h-full text-[19px] rounded-[var(--icon-radius)]' @click='goCalendar'>
     <div class='calendar-icon rounded-[var(--icon-radius)]'>
       <div class='flex-center h-[25%] text-[0.76em] bg-[#ff5a5d] text-[#fff] rounded-tl-[var(--icon-radius)] rounded-tr-[var(--icon-radius)]'>
         {{ dayjs().format('YYYY年MM月') }}
@@ -16,6 +16,10 @@
 </template>
 <script setup>
   import dayjs from 'dayjs';
+
+  const goCalendar = () => {
+    window.open(`${window.url}?日历`)
+  }
 </script>
 <style scoped>
   .flex-center {

@@ -21,7 +21,25 @@ export const tabs = [
       name: '豆包',
       icon: 'https://files.codelife.cc/icons/doubao.com.webp?x-oss-process=image/resize,limit_0,m_fill,w_100,h_100/quality,q_92/format,webp',
       bgColor: '',
-      link: 'https://tj.shshinfo.com/tz/pcw/db200.html'
+      link: 'https://tj.shshinfo.com/tz/pcw/db1406.html'
+    }, {
+      size: '1x1',
+      name: '抖音',
+      icon: 'https://files.codelife.cc/website/douyin.svg',
+      bgColor: '#1c0b1a',
+      link: 'https://tj.shshinfo.com/tz/pcw/douyin6008.html'
+    }, {
+      size: '1x1',
+      name: '百度',
+      icon: 'https://files.codelife.cc/icons/baidu.svg',
+      bgColor: '#346efd',
+      link: 'https://www.baidu.com/?tn=54093922_41_hao_pg'
+    }, {
+      size: '1x1',
+      name: '好123',
+      icon: 'https://www.hao123.com/favicon.ico',
+      bgColor: '#fff',
+      link: 'https://www.hao123.com/'
     }, {
       size: '1x1',
       name: '淘宝',
@@ -42,24 +60,6 @@ export const tabs = [
       link: 'https://www.tmall.com/'
     }, {
       size: '1x1',
-      name: '百度',
-      icon: 'https://files.codelife.cc/icons/baidu.svg',
-      bgColor: '#346efd',
-      link: 'https://www.baidu.com/?tn=54093922_41_hao_pg'
-    }, {
-      size: '1x1',
-      name: '斗鱼',
-      icon: 'https://files.codelife.cc/icons/douyu.svg',
-      bgColor: '#ff6a2d',
-      link: 'https://www.douyu.com/'
-    }, {
-      size: '1x1',
-      name: '抖音',
-      icon: 'https://files.codelife.cc/website/douyin.svg',
-      bgColor: '#1c0b1a',
-      link: 'https://tj.shshinfo.com/tz/pcw/douyin6008.html'
-    }, {
-      size: '1x1',
       name: '爱奇艺',
       icon: 'https://files.codelife.cc/icons/iqiyi.svg',
       bgColor: '#00cc4c',
@@ -72,16 +72,22 @@ export const tabs = [
       link: 'https://www.bilibili.com/'
     }, {
       size: '1x1',
-      name: '知乎',
-      icon: 'https://files.codelife.cc/icons/zhihu.svg',
-      bgColor: '#0c6dfe',
-      link: 'https://www.zhihu.com/'
+      name: '斗鱼',
+      icon: 'https://files.codelife.cc/icons/douyu.svg',
+      bgColor: '#ff6a2d',
+      link: 'https://www.douyu.com/'
     }, {
       size: '1x1',
       name: '新浪微博',
       icon: 'https://files.codelife.cc/icons/weibo.svg',
       bgColor: '#ffd850',
       link: 'https://weibo.com/newlogin?tabtype=weibo&gid=102803&openLoginLayer=0&url=https%3A%2F%2Fweibo.com%2F'
+    }, {
+      size: '1x1',
+      name: '知乎',
+      icon: 'https://files.codelife.cc/icons/zhihu.svg',
+      bgColor: '#0c6dfe',
+      link: 'https://www.zhihu.com/'
     }, {
       size: '1x1',
       name: 'MacCMS',
@@ -159,7 +165,7 @@ export const tabs = [
         name: '豆包',
         icon: 'https://files.codelife.cc/icons/doubao.com.webp?x-oss-process=image/resize,limit_0,m_fill,w_100,h_100/quality,q_92/format,webp',
         bgColor: '',
-        link: 'https://tj.shshinfo.com/tz/pcw/db200.html'
+        link: 'https://tj.shshinfo.com/tz/pcw/db1406.html'
       },
     ]
   },

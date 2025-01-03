@@ -1,7 +1,7 @@
 <template>
   <div class='hotsearch'>
     <div class='topsearch-icon'>
-      <div class='topsearch-icon-top'>
+      <div class='topsearch-icon-top' @click='goHotSearch'>
         <span :class='["top-tag", state.active === i ? "active" : ""]' v-for='{ name, id },i in state.tag' @mouseenter='mouseenter(id, i)'>
           {{ name }}
         </span>
@@ -48,6 +48,10 @@
   const mouseenter = async (id, i) => {
     state.active = i
     getData(i)
+  }
+
+  const goHotSearch = (e) => {
+    window.open(`${state.tag[0].cache[0].link}`)
   }
 
   onMounted(() => {
@@ -103,6 +107,7 @@
       scrollbar-color: rgba(var(--alpha-bg), .4) transparent;
       scrollbar-width: none;
       overflow-y: auto;
+      z-index: 99;
 
       li {
         min-height: 25%;
