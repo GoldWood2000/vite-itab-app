@@ -25,7 +25,7 @@
   </div>
 </template>
 <script setup>
-  import { defineProps, watch, ref } from 'vue';
+  import { watch, ref } from 'vue';
   import OneIcon from './components/1x1.vue';
   import Weather from './components/Weather.vue';
   import Calendar from './components/Calendar.vue';

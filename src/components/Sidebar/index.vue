@@ -47,7 +47,7 @@
   </div>
 </template>
 <script setup>
-  import { reactive, defineExpose } from 'vue';
+  import { reactive } from 'vue';
   import { tabs } from '@/config';
   const state = reactive({ tabs, active: 0 })
 

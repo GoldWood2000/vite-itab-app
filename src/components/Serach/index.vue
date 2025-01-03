@@ -51,10 +51,10 @@
 
   const enterJump = () => {
     if (!state.text) {
-      window.open('https://www.baidu.com/?tn=15007414_23_dg', '_blank')
+      window.open(window.url, '_blank')
       return
     }
-    window.open(`https://www.baidu.com/s?wd=${state.text}&tn=54093922_41_hao_pg&ie=utf-8`, '_blank')
+    window.open(`${window.url}?${state.text}`, '_blank')
   }
 
   const keyup = (e) => {

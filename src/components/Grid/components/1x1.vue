@@ -9,7 +9,6 @@
   </div>
 </template>
 <script setup>
-  import { defineProps } from 'vue';
   const props = defineProps(['icon', 'bgColor', 'link'])
   
   const jump = () => {

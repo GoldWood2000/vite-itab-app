@@ -3,18 +3,10 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="<%= _FAVICONPATH_ %>favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="<%- faviconPath %>favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>新标签页</title>
-  <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?2ba581903e0c35ef8ef12ca018377c0e";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+  <%- injectConfigScript %>
 </head>
 
 <body>

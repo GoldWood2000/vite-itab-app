@@ -37,7 +37,7 @@
         data.forEach((item) => {
           const objUrl = qs.parseUrl(item.link)
           Reflect.set(objUrl.query, 'tn', '54093922_41_hao_pg')
-          item.link = qs.stringifyUrl(objUrl)
+          item.link = `${window.url}?${objUrl.query.wd}`
         })
       }
       state.tagData = data

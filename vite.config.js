@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { createHtmlPlugin } from 'vite-plugin-html'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 import { fileURLToPath, URL } from "node:url";
 
 const srcPath = fileURLToPath(new URL("./src", import.meta.url))
@@ -26,9 +27,18 @@ export default defineConfig({
     createHtmlPlugin({
       inject: {
         data: {
-          _FAVICONPATH_: '/public/'
-        }
+          faviconPath: './public/',
+          injectConfigScript: `<script src="./config.js"></script>`,
+        },
       }
+    }),
+    viteStaticCopy({
+      targets: [
+        {
+          src: `${__dirname}/config.js`,
+          dest: ''
+        }
+      ]
     })
   ],
   resolve: {
