@@ -58,7 +58,7 @@
   }
 
   const keyup = (e) => {
-    if (e.code === 'Enter') {
+    if (e.code === 'Enter' || e.key === 'Enter' || e.keyCode === 13) {
       enterJump()
     }
   }

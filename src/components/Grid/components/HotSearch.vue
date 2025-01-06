@@ -6,7 +6,7 @@
           {{ name }}
         </span>
       </div>
-      <ul class='topsearch-icon-content'>
+      <ul class='topsearch-icon-content' ref='listRef' @mouseenter='stopScroll' @mouseleave='startScroll'>
         <li class='' v-for='item, index in state.tagData'>
           <span class='icon-index'>{{ index + 1 }}</span>
           <a :href='item.link' target='_blank' class='flex-1 text-ellipsis overflow-hidden whitespace-nowrap text-[#ddd]'>{{ item.title }}</a>
@@ -17,16 +17,19 @@
   </div>
 </template>
 <script setup>
-  import { reactive, onMounted } from 'vue';
+  import { reactive, onMounted, ref, nextTick } from 'vue';
   import qs from 'query-string';
   import { get } from '@/plugin/http';
   const state = reactive({
-    tag: [{ name: '百度', id: 'Jb0vmloB1G', cache: [] },{ name: '微博', id: 'KqndgxeLl9', cache: [] }, { name: '知乎', id: 'mproPpoq6O', cache: [] }],
+    tag: [{ name: '百度', id: 'Jb0vmloB1G', cache: [] },{ name: '娱乐', id: 'KqndgxeLl9', cache: [] }, { name: '新闻', id: 'mproPpoq6O', cache: [] }],
     active: 0,
-    tagData: []
+    tagData: [],
+    scrollIndex: 0,
   })
+  const listRef = ref(null)
+  const intervalRef = ref(null)
 
-  const getData = async (cacheIIndex) => {
+  const getData = async (cacheIIndex, cb) => {
     if (state.tag[cacheIIndex].cache.length !== 0) {
       state.tagData = state.tag[cacheIIndex].cache
       return
@@ -42,6 +45,8 @@
       }
       state.tagData = data
       state.tag[cacheIIndex].cache = data
+      await nextTick()
+      cb?.()
     }
   }
 
@@ -54,8 +59,23 @@
     window.open(`${state.tag[0].cache[0].link}`)
   }
 
+  const startScroll = () => {
+    const { children } = listRef.value
+    const height = children[0].clientHeight
+    intervalRef.value = setInterval(() => {
+      state.scrollIndex === 16 ? state.scrollIndex = 0 : state.scrollIndex +=1
+      listRef.value.scrollTo({ behavior: "smooth", top: state.scrollIndex * height })
+    },3000)
+  }
+
+  const stopScroll = () => {
+    clearInterval(intervalRef.value)
+  }
+
   onMounted(() => {
-    getData(0)
+    getData(0, () => {
+      startScroll()
+    })
   })
   
 
