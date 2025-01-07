@@ -68,9 +68,9 @@
     --folder-width: var(--icon-size)* 4 + var(--icon-gap-y)* 3;
     --folder-size: calc((var(--icon-size)* 2 + var(--icon-gap-x) - var(--icon-size) / 5) / 2);
     --folder-gap: calc(((var(--folder-width) - var(--icon-size) / 4) - 4* var(--folder-size)) / 3);
-    grid-column: span 6;
+    grid-column: span 4;
     grid-row: span 2;
-    width: calc(var(--icon-size)* 6 + var(--icon-gap-y)* 5);
+    width: calc(var(--icon-size)* 4 + var(--icon-gap-y)* 3);
     height: calc(var(--icon-size)* 2 + var(--icon-gap-x));
   }
 

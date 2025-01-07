@@ -36,13 +36,11 @@
     }
     const { code, data } = await get(`top/list?lang=cn&size=20&id=${state.tag[state.active].id}`)
     if (code === 200) {
-      if (cacheIIndex === 0) {
-        data.forEach((item) => {
-          const objUrl = qs.parseUrl(item.link)
-          Reflect.set(objUrl.query, 'tn', '54093922_41_hao_pg')
-          item.link = `${window.url}?${objUrl.query.wd}`
-        })
-      }
+      data.forEach((item) => {
+        const objUrl = qs.parseUrl(item.link)
+        Reflect.set(objUrl.query, 'tn', '54093922_41_hao_pg')
+        item.link = `${window.url}?${cacheIIndex === 0 ? objUrl.query.wd : item.title}`
+      })
       state.tagData = data
       state.tag[cacheIIndex].cache = data
       await nextTick()
