@@ -9,7 +9,7 @@
   --primary-color: #1890ff;
   --search-height: 46px;
   --search-radius: 23px;
-  --search-bgColor: rgba(var(--alpha-bg), 0.5);
+  --search-bgColor: rgba(var(--alpha-bg), 1);
   --search-list-hover: rgba(255, 255, 255, .7);
   --icon-radius: 12.8px;
   --icon-size: 60px;

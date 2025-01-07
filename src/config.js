@@ -36,6 +36,12 @@ export const tabs = [
       link: 'https://www.baidu.com/?tn=54093922_41_hao_pg'
     }, {
       size: '1x1',
+      name: 'kimi',
+      icon: 'https://statics.moonshot.cn/kimi-chat/favicon.ico',
+      bgColor: '',
+      link: 'https://kimi.moonshot.cn/'
+    }, {
+      size: '1x1',
       name: '好123',
       icon: 'https://www.hao123.com/favicon.ico',
       bgColor: '#fff',
@@ -166,6 +172,13 @@ export const tabs = [
         icon: 'https://files.codelife.cc/icons/doubao.com.webp?x-oss-process=image/resize,limit_0,m_fill,w_100,h_100/quality,q_92/format,webp',
         bgColor: '',
         link: 'https://tj.shshinfo.com/tz/pcw/db1406.html'
+      },
+      {
+        size: '1x1',
+        name: 'kimi',
+        icon: 'https://statics.moonshot.cn/kimi-chat/favicon.ico',
+        bgColor: '',
+        link: 'https://kimi.moonshot.cn/'
       },
     ]
   },
