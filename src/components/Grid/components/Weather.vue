@@ -49,7 +49,7 @@
   }
 
   const goWeather = () => {
-    window.open(`${window.url}?天气`)
+    window.open(`${window.url}天气`)
   }
 
   onMounted(() => {

@@ -18,7 +18,7 @@
   import dayjs from 'dayjs';
 
   const goCalendar = () => {
-    window.open(`${window.url}?日历`)
+    window.open(`${window.url}日历`)
   }
 </script>
 <style scoped>

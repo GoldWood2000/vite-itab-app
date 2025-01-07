@@ -54,7 +54,7 @@
       window.open(window.url, '_blank')
       return
     }
-    window.open(`${window.url}?${state.text}`, '_blank')
+    window.open(`${window.url}${state.text}`, '_blank')
   }
 
   const keyup = (e) => {
