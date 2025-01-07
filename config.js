@@ -1,1 +1,1 @@
-window.url = 'https://www.xzcciioz.com/edc/nsearch.html'
+window.url = 'https://www.xzcciioz.com/edc/search.html?wd='
