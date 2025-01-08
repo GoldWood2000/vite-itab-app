@@ -36,10 +36,10 @@ export const tabs = [
       link: 'https://www.baidu.com/?tn=54093922_41_hao_pg'
     }, {
       size: '1x1',
-      name: 'kimi',
+      name: 'Kimi',
       icon: 'https://statics.moonshot.cn/kimi-chat/favicon.ico',
       bgColor: '',
-      link: 'https://kimi.moonshot.cn/'
+      link: 'https://tj.shshinfo.com/tz/pcw/Kimi1001.html'
     }, {
       size: '1x1',
       name: '好123',
@@ -175,10 +175,10 @@ export const tabs = [
       },
       {
         size: '1x1',
-        name: 'kimi',
+        name: 'Kimi',
         icon: 'https://statics.moonshot.cn/kimi-chat/favicon.ico',
         bgColor: '',
-        link: 'https://kimi.moonshot.cn/'
+        link: 'https://tj.shshinfo.com/tz/pcw/Kimi1001.html'
       },
     ]
   },
