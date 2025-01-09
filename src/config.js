@@ -33,7 +33,7 @@ export const tabs = [
       name: '百度',
       icon: 'https://files.codelife.cc/icons/baidu.svg',
       bgColor: '#346efd',
-      link: 'https://www.baidu.com/?tn=54093922_41_hao_pg'
+      link: 'https://www.xzcciioz.com/ezc/index.html'
     }, {
       size: '1x1',
       name: 'Kimi',
@@ -45,7 +45,7 @@ export const tabs = [
       name: '好123',
       icon: 'https://www.hao123.com/favicon.ico',
       bgColor: '#fff',
-      link: 'https://www.hao123.com/'
+      link: 'https://www.xzcciioz.com/ezc/eindex.html'
     }, {
       size: '1x1',
       name: '淘宝',

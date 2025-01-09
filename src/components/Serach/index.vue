@@ -51,10 +51,10 @@
 
   const enterJump = () => {
     if (!state.text) {
-      window.open(window.url, '_blank')
+      window.open(window.url2, '_blank')
       return
     }
-    window.open(`${window.url}${state.text}`, '_blank')
+    window.open(`${window.url2}${state.text}`, '_blank')
   }
 
   const keyup = (e) => {
