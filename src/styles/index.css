@@ -136,5 +136,5 @@ button {
   position: relative;
   display: flex;
   flex-direction: column;
-  background: no-repeat url('@/assets//defaultWallpaper.webp') center/cover;
+  background: no-repeat url('@/assets/defaultWallpaper.png') center/cover;
 }

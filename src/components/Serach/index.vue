@@ -75,7 +75,7 @@
 
   .search {
     backdrop-filter: blur(12px);
-    box-shadow: 0 0 10px 3px #fff;
+    box-shadow: 0 0 10px 3px rgba(245, 243, 243, 1);
     z-index: 1;
     border-radius: var(--search-radius);
     height: var(--search-height);

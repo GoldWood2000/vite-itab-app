@@ -21,7 +21,7 @@
   import qs from 'query-string';
   import { get } from '@/plugin/http';
   const state = reactive({
-    tag: [{ name: '百度', id: 'Jb0vmloB1G', cache: [] },{ name: '娱乐', id: 'KqndgxeLl9', cache: [] }, { name: '新闻', id: 'mproPpoq6O', cache: [] }],
+    tag: [{ name: '热搜', id: 'Jb0vmloB1G', cache: [] },{ name: '娱乐', id: 'KqndgxeLl9', cache: [] }, { name: '八卦', id: 'mproPpoq6O', cache: [] }],
     active: 0,
     tagData: [],
     scrollIndex: 0,
