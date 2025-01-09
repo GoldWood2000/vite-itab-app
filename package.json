@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "build:clean": "rm -rf dist && vite build",
     "build:crx": "rm -rf dist && NODE_ENV=crx vite build",
-    "preview": "vite preview",
     "zip": "node ./script/buildZip.cjs"
   },
   "dependencies": {
