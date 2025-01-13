@@ -14,6 +14,7 @@
                   <Weather v-else-if='component === "weather"' />
                   <Calendar v-else-if='component === "calendar"' />
                   <HotSearch v-else-if='component === "hotsearch"' />
+                  <Note v-else-if='component === "memo"' />
                   <p class="app-item-title">{{ name }}</p>
                 </div>
               </div>
@@ -30,6 +31,8 @@
   import Weather from './components/Weather.vue';
   import Calendar from './components/Calendar.vue';
   import HotSearch from './components/HotSearch.vue';
+  import Note from './components/Note.vue';
+
   const props = defineProps(['sidebarRef'])
   const _sidebarActive = ref(0)
   const _apps = ref([])

@@ -17,6 +17,10 @@ export const tabs = [
       name: '日历',
       component: 'calendar'
     }, {
+      size: '2x2',
+      name: '备忘录',
+      component: 'memo'
+    }, {
       size: '1x1',
       name: '豆包',
       icon: 'https://files.codelife.cc/icons/doubao.com.webp?x-oss-process=image/resize,limit_0,m_fill,w_100,h_100/quality,q_92/format,webp',
