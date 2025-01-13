@@ -123,6 +123,10 @@
           box-sizing: border-box;
           justify-content: center;
           padding-bottom: 50px;
+          height: 100%;
+          overflow: auto;
+          scrollbar-color: rgba(var(--alpha-bg), .4) transparent;
+          scrollbar-width: none;
 
           .app-item {
             position: relative;
