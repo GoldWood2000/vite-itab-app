@@ -104,6 +104,42 @@ export const tabs = [
       icon: maccms,
       bgColor: '#fff',
       link: 'http://vod.iwantc.cyou/'
+    }, {
+      size: '1x1',
+      name: '秘塔写作猫',
+      icon: 'https://files.codelife.cc/icons/xiezuocat.com.svg',
+      bgColor: '#fefefe',
+      link: 'https://xiezuocat.com'
+    }, {
+      size: '1x1',
+      name: '秘塔写作猫',
+      icon: 'https://files.codelife.cc/icons/biling.cn.svg',
+      bgColor: '#fefefe',
+      link: 'https://ibiling.cn/paper'
+    }, {
+      size: '1x1',
+      name: '智谱清言',
+      icon: 'https://files.codelife.cc/icons/chatglm.cn.png?x-oss-process=image/resize,limit_0,m_fill,w_100,h_100/quality,q_92/format,webp',
+      bgColor: '#fefefe',
+      link: 'https://chatglm.cn/main/alltoolsdetail?image=https://sfile.chatglm.cn/activeimg/bdms/66b97e348217030036f486f1&lang=zh'
+    }, {
+      size: '1x1',
+      name: 'AIPPT',
+      icon: 'https://files.codelife.cc/icons/mindshow.fun.svg',
+      bgColor: '#fefefe',
+      link: 'https://www.mindshow.fun/#/home'
+    }, {
+      size: '1x1',
+      name: '阿里绘蛙',
+      icon: 'https://files.codelife.cc/icons/ihuiwa.jpg?x-oss-process=image/resize,limit_0,m_fill,w_100,h_100/quality,q_92/format,webp',
+      bgColor: '#fefefe',
+      link: 'https://www.ihuiwa.com/invite'
+    }, {
+      size: '1x1',
+      name: '博思AIPPT',
+      icon: 'https://files.codelife.cc/icons/pptgo.cn.webp?x-oss-process=image/resize,limit_0,m_fill,w_100,h_100/quality,q_92/format,webp',
+      bgColor: '#fefefe',
+      link: 'https://pptgo.cn'
     },]
   },
   {

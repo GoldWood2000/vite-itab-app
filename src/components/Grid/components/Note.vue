@@ -15,7 +15,7 @@
 </template>
 <script setup>
   const goMemo = () => {
-    window.open(`${window.url}`)
+    window.open(`${window.url}备忘录`)
   }
 </script>
 <style scoped>
