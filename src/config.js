@@ -14,13 +14,19 @@ export const tabs = [
       component: 'hotsearch'
     }, {
       size: '2x2',
-      name: '日历',
-      component: 'calendar'
+      name: '十二星座',
+      component: 'constellation'
     }, {
       size: '2x2',
-      name: '备忘录',
-      component: 'memo'
-    }, {
+      name: '日历',
+      component: 'calendar'
+    },
+    // {
+    //   size: '2x2',
+    //   name: '备忘录',
+    //   component: 'note'
+    // }, 
+    {
       size: '1x1',
       name: '豆包',
       icon: 'https://files.codelife.cc/icons/doubao.com.webp?x-oss-process=image/resize,limit_0,m_fill,w_100,h_100/quality,q_92/format,webp',
@@ -46,10 +52,10 @@ export const tabs = [
       link: 'https://tj.shshinfo.com/tz/pcw/Kimi1001.html'
     }, {
       size: '1x1',
-      name: '好123',
-      icon: 'https://www.hao123.com/favicon.ico',
-      bgColor: '#fff',
-      link: 'https://www.xzcciioz.com/ezc/eindex.html'
+      name: '秘塔写作猫',
+      icon: 'https://files.codelife.cc/icons/xiezuocat.com.svg',
+      bgColor: '#fefefe',
+      link: 'https://xiezuocat.com'
     }, {
       size: '1x1',
       name: '淘宝',
@@ -106,13 +112,13 @@ export const tabs = [
       link: 'http://vod.iwantc.cyou/'
     }, {
       size: '1x1',
-      name: '秘塔写作猫',
-      icon: 'https://files.codelife.cc/icons/xiezuocat.com.svg',
-      bgColor: '#fefefe',
-      link: 'https://xiezuocat.com'
+      name: '好123',
+      icon: 'https://www.hao123.com/favicon.ico',
+      bgColor: '#fff',
+      link: 'https://www.xzcciioz.com/ezc/eindex.html'
     }, {
       size: '1x1',
-      name: '秘塔写作猫',
+      name: '专业AI论文写作',
       icon: 'https://files.codelife.cc/icons/biling.cn.svg',
       bgColor: '#fefefe',
       link: 'https://ibiling.cn/paper'
