@@ -1,6 +1,6 @@
 <template>
   <div class='wrapCon relative w-full h-full text-[19px] rounded-[var(--icon-radius)]' @click='goConstellation'>
-    <div class='tag'>十二星座</div>
+    <div class='tag'>星座运势</div>
   </div>
 </template>
 <script setup>

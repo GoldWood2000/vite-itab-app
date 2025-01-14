@@ -14,7 +14,7 @@ export const tabs = [
       component: 'hotsearch'
     }, {
       size: '2x2',
-      name: '十二星座',
+      name: '星座运势',
       component: 'constellation'
     }, {
       size: '2x2',
@@ -40,16 +40,16 @@ export const tabs = [
       link: 'https://tj.shshinfo.com/tz/pcw/douyin6008.html'
     }, {
       size: '1x1',
-      name: '百度',
-      icon: 'https://files.codelife.cc/icons/baidu.svg',
-      bgColor: '#346efd',
-      link: 'https://www.xzcciioz.com/ezc/index.html'
-    }, {
-      size: '1x1',
       name: 'Kimi',
       icon: 'https://statics.moonshot.cn/kimi-chat/favicon.ico',
       bgColor: '',
       link: 'https://tj.shshinfo.com/tz/pcw/Kimi1001.html'
+    }, {
+      size: '1x1',
+      name: '百度',
+      icon: 'https://files.codelife.cc/icons/baidu.svg',
+      bgColor: '#346efd',
+      link: 'https://www.xzcciioz.com/ezc/index.html'
     }, {
       size: '1x1',
       name: '秘塔写作猫',
@@ -112,10 +112,10 @@ export const tabs = [
       link: 'http://vod.iwantc.cyou/'
     }, {
       size: '1x1',
-      name: '好123',
-      icon: 'https://www.hao123.com/favicon.ico',
-      bgColor: '#fff',
-      link: 'https://www.xzcciioz.com/ezc/eindex.html'
+      name: 'AIPPT',
+      icon: 'https://files.codelife.cc/icons/mindshow.fun.svg',
+      bgColor: '#fefefe',
+      link: 'https://www.mindshow.fun/#/home'
     }, {
       size: '1x1',
       name: '专业AI论文写作',
@@ -130,10 +130,10 @@ export const tabs = [
       link: 'https://chatglm.cn/main/alltoolsdetail?image=https://sfile.chatglm.cn/activeimg/bdms/66b97e348217030036f486f1&lang=zh'
     }, {
       size: '1x1',
-      name: 'AIPPT',
-      icon: 'https://files.codelife.cc/icons/mindshow.fun.svg',
-      bgColor: '#fefefe',
-      link: 'https://www.mindshow.fun/#/home'
+      name: '好123',
+      icon: 'https://www.hao123.com/favicon.ico',
+      bgColor: '#fff',
+      link: 'https://www.xzcciioz.com/ezc/eindex.html'
     }, {
       size: '1x1',
       name: '阿里绘蛙',
