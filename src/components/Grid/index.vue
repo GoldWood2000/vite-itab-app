@@ -5,7 +5,7 @@
         <Transition name="slide-up">
           <div class='h-[100%] relative' v-show='_sidebarActive === index'>
             <div class='icon-item' >
-              <div class='app-grid'>
+              <div :class='["app-grid", `app-grid${index}`]'>
                 <div
                   v-for='({ name, size, icon, bgColor, component, link }, i) in app'
                   :class='["app-item", "app-item-duration", `icon-size-${size} `]'

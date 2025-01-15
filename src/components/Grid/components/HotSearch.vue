@@ -6,11 +6,11 @@
           {{ name }}
         </span>
       </div>
-      <ul class='topsearch-icon-content' ref='listRef' @mouseenter='stopScroll' @mouseleave='startScroll'>
-        <li class='' v-for='item, index in state.tagData'>
-          <span class='icon-index'>{{ index + 1 }}</span>
-          <a :href='item.link' target='_blank' class='flex-1 text-ellipsis overflow-hidden whitespace-nowrap text-[#ddd]'>{{ item.title }}</a>
-          <span class='max-w-[60px] overflow-hidden text-[#b3b6bb]'>{{ item.hotValue }}</span>
+      <ul class='_wheel topsearch-icon-content' ref='listRef' @mouseenter='stopScroll' @mouseleave='startScroll'>
+        <li class='_wheel' v-for='item, index in state.tagData'>
+          <span class='_wheel icon-index'>{{ index + 1 }}</span>
+          <a :href='item.link' target='_blank' class='_wheel flex-1 text-ellipsis overflow-hidden whitespace-nowrap text-[#ddd]'>{{ item.title }}</a>
+          <span class='_wheel max-w-[60px] overflow-hidden text-[#b3b6bb]'>{{ item.hotValue }}</span>
         </li>
       </ul>
     </div>
